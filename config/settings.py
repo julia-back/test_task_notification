@@ -121,3 +121,8 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 # Настройки для телеграм-бота
 TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 TELEGRAM_BOT_NAME = os.getenv('TELEGRAM_BOT_NAME')
+
+
+# Настройки для SMS
+SMSC_RU_LOGIN = os.getenv('SMSC_RU_LOGIN')
+SMSC_RU_PASSWORD = os.getenv('SMSC_RU_PASSWORD')
