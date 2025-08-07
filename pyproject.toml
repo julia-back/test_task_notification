@@ -14,6 +14,8 @@ celery = "^5.5.3"
 django-celery-beat = "^2.8.1"
 redis = "^6.3.0"
 gevent = "^25.5.1"
+python-telegram-bot = "^22.3"
+requests = "^2.32.4"
 
 
 [build-system]

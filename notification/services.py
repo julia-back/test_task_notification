@@ -20,7 +20,7 @@ def send_notification(recipient: RecipientModel, subject, message):
     else:
         info = info + "Не удалось отправить по SMS.\n"
 
-    task_result = send_telegram_notification.delay(recipient.telegram_username, subject, message)
+    task_result = send_telegram_notification.delay(recipient.telegram_chat_id, subject, message)
     if task_result.get():
         info = info + "Задача на отправку в Telegram поставлена в очередь.\n"
     else:
