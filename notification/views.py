@@ -4,10 +4,13 @@ from .services import send_notification
 from rest_framework import status
 from .models import RecipientModel
 from .serializers import SendNotificationSerializers
-import smtplib
 
 
 class SendNotificationAPIView(APIView):
+    """
+    Представление для запуска отправки уведомлений. Возвращает
+    информацию об успешном/неуспешном добавлении  в очередь на отправку.
+    """
 
     def post(self, request, recipient_id):
         serializer = SendNotificationSerializers(data=request.data)
