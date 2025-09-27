@@ -1,10 +1,9 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .services import send_notification
 from rest_framework import status
 from .models import RecipientModel
 from .serializers import SendNotificationSerializers
-from .services import NotificationManager
+from .services import NotificationService
 
 
 class SendNotificationAPIView(APIView):
