@@ -1,5 +1,5 @@
 from celery import shared_task
-from .services import EmailChannel, SMSChannel, TelegramChannel
+from .channels import EmailChannel, SMSChannel, TelegramChannel
 
 
 @shared_task
